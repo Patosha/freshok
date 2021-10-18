@@ -3,5 +3,129 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  &__top {
+    background-color: #31352b;
+  }
+
+  &-wrapper__top {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  &__bottom {
+    background-color: #63a60f;
+    padding: 30px 0;
+  }
+
+  &-wrapper__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.address {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0 15px 0;
+    margin-left: 44px;
+  }
+
+  &__item {
+    margin-right: 82px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__link::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 315px;
+    width: 32px;
+    height: 22px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/address.svg');
+  }
+}
+
+.navigation {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0 15px 0;
+  }
+
+  &__item {
+    margin-right: 24px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.user-nav {
+  display: flex;
+
+  &__link {
+    display: flex;
+    width: 32px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 33px;
+  }
+
+  &__link:last-child {
+    margin-right: 0;
+  }
+
+  &__link--user {
+    background-image: url('../images/icons/user-link.svg');
+  }
+
+  &__link--favorite {
+    background-image: url('../images/icons/heart.svg');
+  }
+
+  &__link--cart {
+    background-image: url('../images/icons/cart.svg');
+  }
+
+  &__count {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 2;
+    text-align: center;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: #cf3e3b;
+    background-color: #ffffff;
+    top: 80px;
+    right: 400px;
+  }
+}
+
+
+
+
+
+
+
 
 @import 'media';

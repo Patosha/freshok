@@ -1,4 +1,12 @@
 
 body {
+  font-size: 16px;
+  background-color: #ffffff;
+  @extend %OpenSans-400;
+}
 
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px; 
 }
