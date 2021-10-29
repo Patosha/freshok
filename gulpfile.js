@@ -13,6 +13,7 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const gulpStylelint = require('gulp-stylelint');
 
 function browsersync() {
   browserSync.init({
@@ -24,6 +25,13 @@ function browsersync() {
 
 function styles() {
   return src('app/scss/style.scss')
+    .pipe(gulpStylelint({
+      failAfterError: false,
+      reporters: [{
+        formatter: 'string',
+        console: true
+      }]
+    }))
     .pipe(scss({
       outputStyle: 'compressed'
     }))
