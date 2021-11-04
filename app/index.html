@@ -211,20 +211,34 @@
             </button>
           </li>
         </ul>
-        <ul class="goods">
-          <li class="article">
-            <img class="article__img" src="images/goods/pineapple.jpg" alt="Ананас">
-            <h3 class="article__title">
+
+        <article class="card-product">
+          <div class="badge">
+            <span class="badge__novelty">
+              новинка
+            </span>
+            <span class="badge__discount">
+              -50%
+            </span>
+            <button class="badge__favorites" type="button"></button>
+          </div>
+          <img class="card-product__img" src="images/goods/pineapple.jpg" alt="Ананас">
+          <h3 class="card-product__title">
+            <a class="card-product__link" href="#">
               Ананас, 1кг
-            </h3>
-            <div class="article__wrap">
-              <span class="article__price">
+            </a>
+          </h3>
+          <div class="card-product__price">
+            <span class="card-product__price-old">
+              1999 ₽
+              <span class="card-product__price-current">
                 999 ₽
               </span>
-              <button class="article__cart" type="button"></button>
-            </div>
-          </li>
-        </ul>
+            </span>
+            <button class="card-product__cart" type="button"></button>
+          </div>
+        </article>
+        <button class="btn btn--footer btn--slider" type="submit">Показать еще</button>
       </div>
     </section>
 
