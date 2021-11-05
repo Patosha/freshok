@@ -71,7 +71,7 @@
             </div>
           </form>
 
-          <button class="btn btn--footer btn--slider" type="submit">поиск</button>
+          <button class="btn" type="submit">поиск</button>
 
           <div class="user-nav">
             <a class="user-nav__link user-nav__link--user" href="#"></a>
@@ -105,7 +105,7 @@
               <p class="slider__text">
                 Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
               </p>
-              <button class="btn btn--footer btn--slider" type="submit">Купить сейчас</button>
+              <button class="btn btn--slider" type="submit">Купить сейчас</button>
             </div>
           </div>
         </div>
@@ -121,7 +121,7 @@
               <p class="slider__text">
                 Только с 12 по 15 июля скидка на домашние помидорчики
               </p>
-              <button class="btn btn--footer btn--slider" type="submit">Купить сейчас</button>
+              <button class="btn btn--slider" type="submit">Купить сейчас</button>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@
                   Распродажа зелени
                 </span>
               </h1>
-              <button class="btn btn--footer btn--slider" type="submit">Купить сейчас</button>
+              <button class="btn btn--slider" type="submit">Купить сейчас</button>
             </div>
           </div>
         </div>
@@ -178,9 +178,9 @@
       </div>
     </section>
 
-    <section class="top">
+    <section class="top-products">
       <div class="container">
-        <h2 class="title">
+        <h2 class="top-products__title title">
           Топовые товары
         </h2>
 
@@ -211,20 +211,192 @@
             </button>
           </li>
         </ul>
-        <ul class="goods">
-          <li class="article">
-            <img class="article__img" src="images/goods/pineapple.jpg" alt="Ананас">
-            <h3 class="article__title">
-              Ананас, 1кг
-            </h3>
-            <div class="article__wrap">
-              <span class="article__price">
-                999 ₽
-              </span>
-              <button class="article__cart" type="button"></button>
-            </div>
+        <ul class="top-products__list">
+          <li class="top-products__item">
+            <article class="card-product">
+              <div class="card-product__wrap">
+                <span class="badge">
+                  новинка
+                </span>
+                <span class="badge badge--discount">
+                  -50%
+                </span>
+                <button class="card-product__favorites" type="button"></button>
+              </div>
+              <img class="card-product__img" src="images/goods/pineapple.jpg" alt="Ананас">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="#">
+                  Ананас, 1кг
+                </a>
+              </h3>
+              <div class="card-product__price">
+                <span class="price">
+                  999 ₽ 
+                </span>
+                <span class="price price--current">
+                  1999 ₽
+                </span>
+                <button class="card-product__cart" type="button"></button>
+              </div>
+            </article>
+          </li>
+          <li class="top-products__item">
+            <article class="card-product">
+              <div class="card-product__wrap">
+                <button class="card-product__favorites" type="button"></button>
+              </div>
+              <img class="card-product__img" src="images/goods/lemon.jpg" alt="Лимон">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="#">
+                  Лимон, 1кг
+                </a>
+              </h3>
+              <div class="card-product__price">
+                <span class="price">
+                  199 ₽ 
+                </span>
+                <button class="card-product__cart" type="button"></button>
+              </div>
+            </article>
+          </li>
+          <li class="top-products__item">
+            <article class="card-product">
+              <div class="card-product__wrap">
+                <span class="badge badge--hit">
+                  хит
+                </span>
+                <button class="card-product__favorites" type="button"></button>
+              </div>
+              <img class="card-product__img" src="images/goods/dragon fruit.jpg" alt="Питахайя красная с белой мякотью">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="#">
+                  Питахайя красная с белой мякотью, 1шт
+                </a>
+              </h3>
+              <div class="card-product__price">
+                <span class="price">
+                  1019 ₽ 
+                </span>
+                <button class="card-product__cart" type="button"></button>
+              </div>
+            </article>
+          </li>
+          <li class="top-products__item">
+            <article class="card-product">
+              <div class="card-product__wrap">
+                <span class="badge">
+                  новинка
+                </span>
+                <button class="card-product__favorites" type="button"></button>
+              </div>
+              <img class="card-product__img" src="images/goods/paprik.jpg" alt="Перец оранжевый">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="#">
+                  Перец оранжевый, 1кг
+                </a>
+              </h3>
+              <div class="card-product__price">
+                <span class="price">
+                  349 ₽ 
+                </span>
+                <button class="card-product__cart" type="button"></button>
+              </div>
+            </article>
+          </li>
+          <li class="top-products__item">
+            <article class="card-product">
+              <div class="card-product__wrap">
+                <span class="badge badge--hit">
+                  хит
+                </span>
+                <button class="card-product__favorites" type="button"></button>
+              </div>
+              <img class="card-product__img" src="images/goods/carrot.jpg" alt="Морковь молодая с бабушкиной грядки">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="#">
+                  Морковь молодая с бабушкиной грядки, 1кг
+                </a>
+              </h3>
+              <div class="card-product__price">
+                <span class="price">
+                  49 ₽ 
+                </span>
+                <button class="card-product__cart" type="button"></button>
+              </div>
+            </article>
+          </li>
+          <li class="top-products__item">
+            <article class="card-product">
+              <div class="card-product__wrap">
+                <span class="badge badge--discount-top">
+                  -30%
+                </span>
+                <button class="card-product__favorites" type="button"></button>
+              </div>
+              <img class="card-product__img" src="images/goods/juice.jpg"
+                alt="Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="#">
+                  Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...
+                </a>
+              </h3>
+              <div class="card-product__price">
+                <span class="price">
+                  299 ₽ 
+                </span>
+                <span class="price price--current">
+                  199 ₽
+                </span>
+                <button class="card-product__cart" type="button"></button>
+              </div>
+            </article>
+          </li>
+          <li class="top-products__item">
+            <article class="card-product">
+              <div class="card-product__wrap">
+                <span class="badge">
+                  новинка
+                </span>
+                <button class="card-product__favorites" type="button"></button>
+              </div>
+              <img class="card-product__img" src="images/goods/coffee.jpg"
+                alt="Кофе с коноплей органический Caffé Salomoni 250г">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="#">
+                  Кофе с коноплей органический Caffé Salomoni 250г
+                </a>
+              </h3>
+              <div class="card-product__price">
+                <span class="price">
+                  877 ₽ 
+                </span>
+                <button class="card-product__cart" type="button"></button>
+              </div>
+            </article>
+          </li>
+          <li class="top-products__item">
+            <article class="card-product">
+              <div class="card-product__wrap">
+                <button class="card-product__favorites" type="button"></button>
+              </div>
+              <img class="card-product__img" src="images/goods/ketchup.jpg"
+                alt="Кетчуп томатный детский органический Bio-Zentrale 500мл">
+              <h3 class="card-product__title">
+                <a class="card-product__link" href="#">
+                  Кетчуп томатный детский органический Bio-Zentrale 500мл
+                </a>
+              </h3>
+              <div class="card-product__price">
+                <span class="price">
+                  600 ₽ 
+                </span>
+                <button class="card-product__cart" type="button"></button>
+              </div>
+            </article>
           </li>
         </ul>
+
+        <button class="btn btn--show" type="submit">Показать еще</button>
       </div>
     </section>
 
@@ -243,7 +415,7 @@
             <div class="footer__search-inner">
               <input class="footer__search-field" type="text" placeholder="email@email.com">
             </div>
-            <button class="btn btn__footer" type="submit">подписаться</button>
+            <button class="btn btn--footer" type="submit">подписаться</button>
           </form>
         </div>
 
