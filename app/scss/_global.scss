@@ -5,12 +5,12 @@ body {
 
 body {
   @extend%OpenSans-400;
-  
+
   @extend%white;
   line-height: 1.4;
   font-size: 16px;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
 }
@@ -57,16 +57,16 @@ body {
   transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
 
   &:focus {
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 4px rgba(255 255 255 / 50%);
   }
 
   &:hover {
-    background-color: rgba(49, 53, 43, 0.85);
+    background-color: rgba(49 53 43 / 85%);
   }
 
   &:active {
     background-color: #31352b;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255 255 255 / 50%);
   }
 }
 
@@ -83,7 +83,7 @@ body {
   text-transform: unset;
 
   &:focus {
-    box-shadow: 0 0 0 4px #E0EDCF;
+    box-shadow: 0 0 0 4px #e0edcf;
   }
 
   &:hover {
@@ -92,7 +92,7 @@ body {
 
   &:active {
     background-color: #63a60e;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255 255 255 / 50%);
   }
 }
 
@@ -112,18 +112,18 @@ body {
   margin-top: 18px;
 
   &:focus {
-    box-shadow: 0 0 0 4px rgba(99, 166, 14, 0.5);
+    box-shadow: 0 0 0 4px rgba(99 166 14 / 50%);
     color: #63a60e;
   }
 
   &:hover {
-    background-color: #EFF6E7;
+    background-color: #eff6e7;
   }
 
   &:active {
     background-color: #fff;
-    box-shadow: inset 0 10px 4px rgba(0, 0, 0, 0.1);
-    color: rgba(99, 166, 14, 0.5);
+    box-shadow: inset 0 10px 4px rgba(0 0 0 / 10%);
+    color: rgba(99 166 14 / 50%);
   }
 }
 
@@ -143,14 +143,16 @@ body {
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.5);
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(255 255 255 / 50%);
+    box-shadow: inset 0px 4px 4px rgba(0 0 0 / 25%);
     background-color: #63a60e;
   }
 }
 
 .badge {
   @extend %OpenSans-700;
+
+  @extend %white;
   background-color: #63a60e;
   border-radius: 6px;
   padding: 3px 6px;
@@ -159,7 +161,6 @@ body {
   left: 12px;
   text-transform: uppercase;
   line-height: 1;
-  @extend %white;
   font-size: 10px;
 }
 
@@ -182,16 +183,18 @@ body {
 }
 
 .price {
-  line-height: 1;
   @extend %dark-500;
+
+  line-height: 1;
   position: absolute;
   bottom: 18px;
   left: 21px;
 }
 
 .price--current {
-  text-decoration: line-through;
   @extend %silver-600;
+
+  text-decoration: line-through;
   bottom: 35px;
   left: 21px;
 }
