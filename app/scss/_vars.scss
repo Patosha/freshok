@@ -1,92 +1,15 @@
-%OpenSans-300 {
-  font-family: 'OpenSans-Light', Sans Serif;
-  font-weight: 300;
-}
-
-%OpenSans-400 {
-  font-family: 'OpenSans-Regular', Sans Serif;
-  font-weight: 400;
-}
-
-%OpenSans-600 {
-  font-family: 'OpenSans-SemiBold', Sans Serif;
-  font-weight: 600;
-}
-
-%OpenSans-700 {
-  font-family: 'OpenSans-Bold', Sans Serif;
-  font-weight: 700;
-}
-
-%Ruda-400 {
-  font-family: 'Ruda-Regular', Sans Serif;
-  font-weight: 400;
-}
-
-%Ruda-600 {
-  font-family: 'Ruda-SemiBold', Sans Serif;
-  font-weight: 600;
-}
-
-%Ruda-700 {
-  font-family: 'Ruda-Bold', Sans Serif;
-  font-weight: 700;
-}
-
-%Ruda-900 {
-  font-family: 'Ruda-Black', Sans Serif;
-  font-weight: 900;
-}
-
-%green-100 {
-  color: #eff6e7;
-}
-
-%green-200 {
-  color: #e0edcf;
-}
-
-%green-900 {
-  color: #63a60f;
-}
-
-%christi {
-  color: #63a60e;
-}
-
-
-%dark-500 {
-  color: #505050;
-}
-
-%dark-800 {
-  color: #31352b;
-}
-
-%dark-900 {
-  color: #121212;
-}
-
-%red-900 {
-  color: #cf3e3b;
-}
-
-%orange-900 {
-  color: #ff7a00;
-}
-
-%yellow-900 {
-  color: #ffb800;
-}
-
-%silver-100 {
-  color: #f6f6f6;
-}
-
-%silver-600 {
-  color: #c1c1c1;
-}
-
-%white {
-  color: #fff;
+:root {
+  --green-900: #63a60f;
+  --christi: #63a60e;
+  --green-200: #e0edcf;
+  --green-100: #eff6e7;
+  --dark-900: #121212;
+  --dark-800: #31352b;
+  --dark-500: #505050;
+  --red-900: #cf3e3b;
+  --orange-900: #ff7a00;
+  --yellow-900: #ffb800;
+  --white: #fff;
+  --silver-100: #f6f6f6;
+  --silver-600: #c1c1c1;
 }
