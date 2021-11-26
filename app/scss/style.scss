@@ -208,61 +208,58 @@
 
 .user-nav {
   display: flex;
-  margin-left: 57px;
+  margin-left: 47px;
 
   &__link {
-    display: flex;
-    width: 32px;
-    height: 30px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
     position: relative;
-    margin-right: 30px;
+    margin-right: 12px;
+    outline: transparent;
   }
 
   &__link:last-child {
     margin-right: 0;
   }
 
-  &__link--profile {
-    background-image: url("../images/icons/user-link.svg");
-  }
-
-  &__link--favorite {
-    background-image: url("../images/icons/heart.svg");
-  }
-
-  &__link--cart {
-    background-image: url("../images/icons/cart.svg");
-  }
-
   &__link::after {
     content: "";
     width: 50px;
     height: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 3px;
     position: absolute;
     background-color: var(--white);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     opacity: 0%;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s, background-color 0.5s, box-shadow 0.5s;
   }
 
   &__link:focus::after {
-    background: rgba(255 255 255 / 10%);
+    background-color: rgba(255 255 255 / 10%);
     box-shadow: inset 0 0 0 3px var(--green-100);
-    outline: transparent;
+    opacity: 100%;
   }
 
   &__link:hover::after {
+    background-color: var(--white);
     opacity: 10%;
   }
 
-  &__link:active::after {
-    opacity: 10%;
+  &__svg {
+    width: 32px;
+    height: 31px;
+    fill: var(--white);
+    transition: fill 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__link:active &__svg {
+    fill: rgba(255 255 255 / 50%);
   }
 
   &__count {
@@ -276,8 +273,8 @@
     border-radius: 50%;
     color: var(--red-900);
     background-color: var(--white);
-    top: -7px;
-    left: -8px;
+    top: 3px;
+    left: 2px;
   }
 }
 
@@ -343,6 +340,7 @@
   &:focus {
     background-color: #f2f2f2;
     box-shadow: 0 0 0 3px rgba(99 166 14 / 50%);
+    outline: transparent;
   }
 
   &:hover {
@@ -355,13 +353,19 @@
 }
 
 .slick-prev {
-  background-image: url("../images/slider/arrow-left.svg");
+  background-image: url("../images/sprite.svg#arrow-left");
   left: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .slick-next {
   right: 53px;
-  background-image: url("../images/slider/arrow-right.svg");
+  background-image: url("../images/sprite.svg#arrow-right");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .advantages {
@@ -436,15 +440,10 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 18px
-  }
-
-  &__item {
-    width: calc(25% - 60px);
-    margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 28px;
+    margin-bottom: 18px;
   }
 }
 
@@ -507,7 +506,7 @@
 
   &__favorites {
     width: 44px;
-    height: 29px;
+    height: 44px;
     background-repeat: no-repeat;
     background-position: center;
     border: transparent;
@@ -515,17 +514,35 @@
     position: absolute;
     top: 14px;
     right: 4px;
+    border-radius: 3px;
+    transition: background-color 0.5s, box-shadow 0.5s;
 
-    &:hover .card-product__favorites-svg path {
-      fill: #ffb800;
-      transition: fill 0.5s;
+    &:focus {
+      background-color: rgba(255 255 255 / 0.01%);
+      box-shadow: 0 0 0 3px var(--green-200);
     }
+  }
+
+  &__favorites-svg {
+    display: block;
+    width: 32px;
+    height: 29px;
+    fill: var(--silver-600);
+    transition: fill 0.5s;
+  }
+
+  &__favorites:hover &__favorites-svg {
+    fill: var(--yellow-900);
+  }
+
+  &__favorites:active &__favorites-svg {
+    fill: rgba(255 184 0 / 50%);
   }
 
   &__title {
     text-align: start;
     font-size: 14px;
-    padding: 18px 18px 0;
+    padding: 18px 20px 0;
     margin-bottom: 50px;
     word-wrap: break-word;
   }
@@ -573,6 +590,7 @@
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+    fill: var(--white);
   }
 
   &__link {
