@@ -16,7 +16,10 @@ body {
 
 .logo {
   display: inline-block;
-  object-fit: cover;
+
+  &__img {
+    object-fit: contain;
+  }
 }
 
 .container {
@@ -42,7 +45,7 @@ body {
   overflow: hidden;
 }
 
-.btn-search {
+.search__btn {
   background-color: var(--dark-800);
   border-radius: 0 6px 6px 0;
   font-weight: 600;
