@@ -172,37 +172,33 @@
 
 .search {
   display: flex;
+  position: relative;
 
   &__inner {
-    position: relative;
-  }
-}
-
-.search-field {
-  width: 419px;
-  padding: 15px 10px 15px 51px;
-  font-size: 14px;
-  line-height: 1.4;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  border-radius: 6px 0 0 6px;
-  border: transparent;
-
-  &::placeholder {
-    color: var(--dark-800);
+    width: 419px;
   }
 
-  &::before {
-    content: "";
-    top: 0;
-    left: 0;
+  &__inner-svg {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url("../images/icons/search.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    top: 16px;
+    left: 13px;
+  }
+
+  &__field {
+    width: 100%;
+    padding: 15px 10px 15px 51px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    border-radius: 6px 0 0 6px;
+    border: transparent;
+
+    &::placeholder {
+      color: var(--dark-800);
+    }
   }
 }
 
@@ -497,8 +493,9 @@
 }
 
 .card-product {
-  width: 300px;
+  max-width: 300px;
   height: 409px;
+  width: 100%;
   border: solid 1px rgba(17 17 17 / 20%);
   border-radius: 6px;
   margin-bottom: 30px;
@@ -722,7 +719,7 @@
 
 .stock {
   background-color: #f5f5f5;
-  color: #121212;
+  color: var(--dark-900);
 }
 
 .footer {
@@ -731,18 +728,19 @@
   font-size: 14px;
 
   &__top {
-    padding: 30px 0 28px;
+    padding: 26px 0 28px;
     display: flex;
     justify-content: space-between;
   }
 
   &__stock {
-    width: 306px;
+    max-width: 306px;
+    width: 100%;
     margin-right: 132px;
   }
 
   &__text {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     line-height: 1;
   }
 
@@ -751,11 +749,12 @@
   }
 
   &__search-field {
-    width: 181px;
+    max-width: 181px;
     height: 40px;
+    width: 100%;
     padding: 12px 13px 12px 12px;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1;
     font-weight: 400;
     letter-spacing: 0.03em;
     border-radius: 6px 0 0 6px;
@@ -796,7 +795,7 @@
 
   &__socials-item {
     display: inline-block;
-    margin-right: 12px;
+    margin-right: 11px;
 
     &:last-child {
       margin-right: 0;
@@ -805,14 +804,29 @@
 
   &__socials-link {
     display: block;
-    width: 32px;
-    height: 32px;
     background-repeat: no-repeat;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s, background-color 0.5s, box-shadow 0.5s;
+    border-radius: 3px;
+    outline: transparent;
 
-    &:active {
+    &:focus {
+      background-color: rgba(255 255 255 / 0.01%);
+      box-shadow: 0 0 0 3px var(--green-200);
+    }
+
+    &:hover {
       opacity: 70%;
     }
+  }
+
+  &__socials-img {
+    width: 32px;
+    height: 32px;
+    fill: var(--white);
+  }
+
+  &__socials-link:active &__socials-img {
+    fill: var(--green-200);
   }
 
   &__line {
