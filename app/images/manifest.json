@@ -1,0 +1,19 @@
+{
+  "name": "Фрешок",
+  "short_name": "Фрешок",
+  "lang": "ru",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#f37f00",
+  "description": "Фрешок —  интернет-магазин продуктов питания, большой ассортимент, низкие цены. Доставка по России.",
+  "orientation": "any",
+  "background_color": "transparent",
+  "gcm_sender_id": "103953800507",
+  "icons": [
+    {
+      "src": "images/favicon-big.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
