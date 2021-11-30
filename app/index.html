@@ -7,12 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет-магазин Фрешок</title>
   <link rel="icon" type="image/svg" href="images/favicon.svg">
+  <link rel="mask-icon" href="images/favicon.svg" color="#000000">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+  <link rel="manifest" href="images/manifest.json">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="header__top">
+    <nav class="header__top">
       <div class="container">
         <div class="header__top-wrapper">
 
@@ -46,9 +51,9 @@
           </nav>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <div class="header__bottom">
+    <nav class="header__bottom">
       <div class="container">
         <div class="header__bottom-wrapper">
 
@@ -56,14 +61,74 @@
             <img class="logo__img" src="images/logo.svg" width="200" height="60" alt="Логотип">
           </a>
 
-          <nav class="header-menu">
-            <div class="icon">
-              <div class="icon__line"></div>
-            </div>
-            <a class="icon__text" href="#">
+          <div class="dropdown">
+            <button class="dropdown__btn">
+              <span class="dropdown__btn-line"></span>
               Каталог продуктов
-            </a>
-          </nav>
+            </button>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Овощи и фрукты
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Бакалея
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Молочные продукты
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Хлеб
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Мясо
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Колбаса
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Рыба
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Алкоголь
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Напитки
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Торты
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Мясо
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">
+                  Чай, кофе
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <form class="search" action="#">
             <label class="search__inner">
@@ -96,13 +161,12 @@
                 <use xlink:href="images/sprite.svg#cart"></use>
               </svg>
               <span class="user-nav__count">12</span>
-              <span class="sr-only">Зайти в корзина</span>
+              <span class="sr-only">Зайти в корзину</span>
             </a>
           </div>
         </div>
       </div>
-    </div>
-    </div>
+    </nav>
   </header>
   <main class="main">
     <h1 class="sr-only">Интернет-магазин продуктов "Фрешок"</h1>
@@ -246,6 +310,9 @@
               </div>
               <a class="card-product__link" href="#">
                 <img class="card-product__img" src="images/goods/pineapple.jpg" width="300" height="215" alt="Ананас">
+                <svg class="card-product__link-svg">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
                 <h5 class="card-product__title">
                   Ананас, 1кг
                 </h5>
@@ -278,6 +345,9 @@
               </div>
               <a class="card-product__link" href="#">
                 <img class="card-product__img" src="images/goods/lemon.jpg" width="300" height="215" alt="Лимон">
+                <svg class="card-product__link-svg">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
                 <h5 class="card-product__title">
                   Лимон, 1кг
                 </h5>
@@ -309,8 +379,11 @@
                 </button>
               </div>
               <a class="card-product__link" href="#">
-                <img class="card-product__img" src="images/goods/dragon fruit.jpg" width="300" height="215"
+                <img class="card-product__img" src="images/goods/dragon-fruit.jpg" width="300" height="215"
                   alt="Питахайя красная с белой мякотью">
+                <svg class="card-product__link-svg">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
                 <h5 class="card-product__title">
                   Питахайя красная с&nbsp;белой мякотью, 1шт
                 </h5>
@@ -341,6 +414,9 @@
               <a class="card-product__link" href="#">
                 <img class="card-product__img" src="images/goods/ketchup.jpg" width="300" height="215"
                   alt="Кетчуп томатный детский органический Bio-Zentrale 500мл">
+                <svg class="card-product__link-svg">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
                 <h5 class="card-product__title">
                   Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт
                 </h5>
@@ -374,6 +450,9 @@
               <a class="card-product__link" href="#">
                 <img class="card-product__img" src="images/goods/carrot.jpg" width="300" height="215"
                   alt="Морковь молодая с бабушкиной грядки">
+                <svg class="card-product__link-svg">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
                 <h5 class="card-product__title">
                   Морковь молодая с&nbsp;бабушкиной грядки, 1кг
                 </h5>
@@ -407,6 +486,9 @@
               <a class="card-product__link" href="#">
                 <img class="card-product__img" src="images/goods/juice.jpg" width="300" height="215"
                   alt="Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн">
+                <svg class="card-product__link-svg">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
                 <h5 class="card-product__title">
                   Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...
                 </h5>
@@ -443,6 +525,9 @@
               <a class="card-product__link" href="#">
                 <img class="card-product__img" src="images/goods/coffee.jpg" width="300" height="215"
                   alt="Кофе с коноплей органический Caffé Salomoni 250г">
+                <svg class="card-product__link-svg">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
                 <h5 class="card-product__title">
                   Кофе с&nbsp;коноплей органический Caff&eacute; Salomoni 250г
                 </h5>
@@ -476,6 +561,9 @@
               <a class="card-product__link" href="#">
                 <img class="card-product__img" src="images/goods/paprik.jpg" width="300" height="215"
                   alt="Перец оранжевый">
+                <svg class="card-product__link-svg">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
                 <h5 class="card-product__title">
                   Перец оранжевый, 1кг
                 </h5>
@@ -583,7 +671,7 @@
           </p>
           <form class="footer__search" action="#">
             <label class="footer__search-inner">
-              <input class="footer__search-field" type="email" name="mail" placeholder="email@email.com">
+              <input class="footer__search-field" type="email" name="mail" placeholder="email@email.com" required>
             </label>
             <button class="btn btn--subscribe" type="submit">подписаться</button>
           </form>
@@ -633,7 +721,6 @@
                   <use xlink:href="images/sprite.svg#facebook"></use>
                 </svg>
                 <span class="sr-only">Фейсбук</span>
-              </a>
               </a>
             </li>
             <li class="footer__socials-item">
