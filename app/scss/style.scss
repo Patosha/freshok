@@ -29,7 +29,7 @@
 
   &__bottom-wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -120,12 +120,6 @@
 
 .dropdown {
   position: relative;
-  margin-right: 18px;
-
-  &:hover {
-    background-color: var(--green-200);
-    border-radius: 6px 6px 0 0;
-  }
 
   &__btn {
     color: var(--christi);
@@ -164,6 +158,11 @@
     }
   }
 
+  &:hover &__btn {
+    background-color: var(--green-200);
+    border-radius: 6px 6px 0 0;
+  }
+
   &::before {
     content: "";
     top: 23px;
@@ -178,15 +177,20 @@
 
   &__list {
     position: absolute;
+    border: transparent;
+    border-radius: 0 0 6px 6px;
+    transition: border 0.5s;
+  }
+
+  &:hover &__list {
+    border: 1px solid #ebebeb;
   }
 
   &__item {
     position: relative;
     top: 100%;
     left: 0;
-    border: 1px solid #ebebeb;
-    border-radius: 0 0 6px 6px;
-    width: 240px;
+    width: 238px;
     background-color: var(--white);
     opacity: 0%;
     transform: scaleY(0);
@@ -207,12 +211,21 @@
     letter-spacing: 0.03em;
     color: #000;
     border-bottom: 1px solid rgba(193 193 193 / 0.3%);
+    padding: 15px 24px;
+    transition: color 0.3s, border 0.3s;
+    border-left: 4px solid transparent;
+  }
+
+  &__link:hover {
+    color: var(--christi);
+    border-left-color: var(--christi);
   }
 }
 
 .search {
   display: flex;
   position: relative;
+  margin-right: 20px;
 
   &__inner {
     width: 419px;
@@ -244,14 +257,13 @@
 
 .user-nav {
   display: flex;
-  margin-left: 47px;
 
   &__link {
     width: 50px;
     height: 50px;
     position: relative;
-    margin-right: 12px;
     outline: transparent;
+    margin-right: 12px;
   }
 
   &__link:last-child {
