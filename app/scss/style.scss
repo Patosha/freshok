@@ -175,6 +175,10 @@
     background-repeat: no-repeat;
   }
 
+  &:hover &::before {
+    transform: rotate(90deg);
+  }
+
   &__list {
     position: absolute;
     border: transparent;
@@ -258,39 +262,41 @@
 .user-nav {
   display: flex;
 
-  &__link {
+  &__btn {
     width: 50px;
     height: 50px;
     position: relative;
     outline: transparent;
     margin-right: 12px;
+    background-color: transparent;
+    border: transparent;
   }
 
-  &__link:last-child {
+  &__btn:last-child {
     margin-right: 0;
   }
 
-  &__link::after {
+  &__btn::after {
     content: "";
     width: 50px;
     height: 50px;
     border-radius: 3px;
     position: absolute;
     background-color: var(--white);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     opacity: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: opacity 0.5s, background-color 0.5s, box-shadow 0.5s;
   }
 
-  &__link:focus::after {
+  &__btn:focus::after {
     background-color: rgba(255 255 255 / 10%);
     box-shadow: inset 0 0 0 3px var(--green-100);
     opacity: 100%;
   }
 
-  &__link:hover::after {
+  &__btn:hover::after {
     background-color: var(--white);
     opacity: 10%;
   }
@@ -306,23 +312,26 @@
     transform: translate(-50%, -50%);
   }
 
-  &__link:active &__svg {
+  &__btn:active &__svg {
     fill: rgba(255 255 255 / 50%);
   }
 
   &__count {
     font-weight: 600;
     font-size: 10px;
-    line-height: 2;
+    line-height: 1;
+    letter-spacing: 0.03em;
     text-align: center;
     position: absolute;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
+    min-width: 18px;
+    padding: 4px 3px;
+    border-radius: 9px;
     color: var(--red-900);
     background-color: var(--white);
     top: 3px;
-    left: 2px;
+    left: 3px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -846,55 +855,15 @@
     margin-bottom: 0;
   }
 
-  &__socials {
+  &__contacts {
     max-width: 215px;
     width: 100%;
   }
 
-  &__socials-hotline,
-  &__socials-address {
+  &__contacts-hotline,
+  &__contacts-address {
     display: inline-block;
     margin-bottom: 18px;
-  }
-
-  &__socials-list {
-    display: flex;
-  }
-
-  &__socials-item {
-    display: inline-block;
-    margin-right: 11px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  &__socials-link {
-    display: block;
-    background-repeat: no-repeat;
-    transition: opacity 0.5s, background-color 0.5s, box-shadow 0.5s;
-    border-radius: 3px;
-    outline: transparent;
-
-    &:focus {
-      background-color: rgba(255 255 255 / 0.01%);
-      box-shadow: 0 0 0 3px var(--green-200);
-    }
-
-    &:hover {
-      opacity: 70%;
-    }
-  }
-
-  &__socials-img {
-    width: 32px;
-    height: 32px;
-    fill: var(--white);
-  }
-
-  &__socials-link:active &__socials-img {
-    fill: var(--green-200);
   }
 
   &__line {
