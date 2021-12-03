@@ -30,7 +30,7 @@
           </a>
         </address>
 
-        <nav class="navigation">
+        <div class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">
@@ -48,7 +48,7 @@
               </a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </div>
   </nav>
@@ -135,34 +135,35 @@
             <svg class="search__inner-svg">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
+            <span class="sr-only">Найти в магазине</span>
             <input class="search__field" type="search" name="search" placeholder="Найти в магазине ...">
           </label>
           <button class="search__btn" type="submit">Поиск</button>
         </form>
 
         <div class="user-nav">
-          <a class="user-nav__link" href="#">
+          <button class="user-nav__btn" type="menu">
             <svg class="user-nav__svg">
               <use xlink:href="images/sprite.svg#user-link"></use>
             </svg>
             <span class="sr-only">Зайти в профиль</span>
-          </a>
+          </button>
 
-          <a class="user-nav__link" href="#">
+          <button class="user-nav__btn" type="menu">
             <svg class="user-nav__svg">
               <use xlink:href="images/sprite.svg#heart"></use>
             </svg>
             <span class="user-nav__count">12</span>
             <span class="sr-only">Посмотреть избранное</span>
-          </a>
+          </button>
 
-          <a class="user-nav__link" href="#">
+          <button class="user-nav__btn" type="menu">
             <svg class="user-nav__svg">
               <use xlink:href="images/sprite.svg#cart"></use>
             </svg>
             <span class="user-nav__count">12</span>
             <span class="sr-only">Зайти в корзину</span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -177,16 +178,18 @@
     <li class="slider__item" style="background-image: url(images/slider/bg1.jpg);">
       <div class="container">
         <div class="slider__content">
-          <p class="slider__title">
+          <h3 class="slider__title">
             Свежачок вам в хату
             <span class="slider__stock">
               Скидка -50%
             </span>
-          </p>
-          <p class="slider__text">
-            Только с&nbsp;7&nbsp;по&nbsp;13&nbsp;июля скидка на&nbsp;сезонные фрукты и&nbsp;овощи до&nbsp;50%.
-            Торопитесь!
-          </p>
+          </h3>
+          <div class="slider__text">
+            <p>
+              Только с&nbsp;7&nbsp;по&nbsp;13&nbsp;июля скидка на&nbsp;сезонные фрукты и&nbsp;овощи до&nbsp;50%.
+              Торопитесь!
+            </p>
+          </div>
           <button class="btn" type="submit">Купить сейчас</button>
         </div>
       </div>
@@ -195,12 +198,12 @@
     <li class="slider__item" style="background-image: url(images/slider/bg2.jpg);">
       <div class="container">
         <div class="slider__content">
-          <h2 class="slider__title">
+          <h3 class="slider__title">
             Накрути себе томатов
             <span class="slider__stock">
               Акция: 3 кг по цене 1
             </span>
-          </h2>
+          </h3>
           <div class="slider__text">
             <p>
               Только с&nbsp;12&nbsp;по&nbsp;15&nbsp;июля скидка на&nbsp;домашние помидорчики
@@ -214,12 +217,12 @@
     <li class="slider__item" style="background-image: url(images/slider/bg3.jpg);">
       <div class="container">
         <div class="slider__content">
-          <h2 class="slider__title">
+          <h3 class="slider__title">
             Пусть остальные позеленеют от зависти
             <span class="slider__stock">
               Распродажа зелени
             </span>
-          </h2>
+          </h3>
           <button class="btn" type="submit">Купить сейчас</button>
         </div>
       </div>
@@ -259,9 +262,9 @@
 </div>
   <section class="top-products">
   <div class="container">
-    <h4 class="title top-products__title">
+    <h2 class="title top-products__title">
       Топовые товары
-    </h4>
+    </h2>
 
     <ul class="mix-filter">
       <li class="mix-filter__list">
@@ -295,12 +298,14 @@
       <li class="top-products__item mix category-a">
         <article class="card-product">
           <div class="card-product__wrap">
+
             <span class="badge-green">
               новинка
             </span>
             <span class="badge-green badge-green--red">
               -50%
             </span>
+
             <button class="card-product__favorites" type="button">
               <svg class="card-product__favorites-svg">
                 <use xlink:href="images/sprite.svg#favorite-btn"></use>
@@ -313,9 +318,9 @@
             <svg class="card-product__link-svg">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
-            <h5 class="card-product__title">
+            <h3 class="card-product__title">
               Ананас, 1кг
-            </h5>
+            </h3>
           </a>
           <div class="card-product__price">
             <span class="price">
@@ -348,9 +353,9 @@
             <svg class="card-product__link-svg">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
-            <h5 class="card-product__title">
+            <h3 class="card-product__title">
               Лимон, 1кг
-            </h5>
+            </h3>
           </a>
           <div class="card-product__price">
             <span class="price">
@@ -384,9 +389,9 @@
             <svg class="card-product__link-svg">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
-            <h5 class="card-product__title">
+            <h3 class="card-product__title">
               Питахайя красная с&nbsp;белой мякотью, 1шт
-            </h5>
+            </h3>
           </a>
           <div class="card-product__price">
             <span class="price">
@@ -417,9 +422,9 @@
             <svg class="card-product__link-svg">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
-            <h5 class="card-product__title">
+            <h3 class="card-product__title">
               Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт
-            </h5>
+            </h3>
           </a>
           <div class="card-product__price">
             <span class="price">
@@ -453,9 +458,9 @@
             <svg class="card-product__link-svg">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
-            <h5 class="card-product__title">
+            <h3 class="card-product__title">
               Морковь молодая с&nbsp;бабушкиной грядки, 1кг
-            </h5>
+            </h3>
           </a>
           <div class="card-product__price">
             <span class="price">
@@ -473,7 +478,7 @@
       <li class="top-products__item mix category-c">
         <article class="card-product">
           <div class="card-product__wrap">
-            <span class="badge-green badge--discount-top">
+            <span class="badge-green badge-green--discount-top">
               -30%
             </span>
             <button class="card-product__favorites" type="button">
@@ -489,9 +494,9 @@
             <svg class="card-product__link-svg">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
-            <h5 class="card-product__title">
+            <h3 class="card-product__title">
               Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...
-            </h5>
+            </h3>
           </a>
           <div class="card-product__price">
             <span class="price">
@@ -528,9 +533,9 @@
             <svg class="card-product__link-svg">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
-            <h5 class="card-product__title">
+            <h3 class="card-product__title">
               Кофе с&nbsp;коноплей органический Caff&eacute; Salomoni 250г
-            </h5>
+            </h3>
           </a>
           <div class="card-product__price">
             <span class="price">
@@ -563,9 +568,9 @@
             <svg class="card-product__link-svg">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
-            <h5 class="card-product__title">
+            <h3 class="card-product__title">
               Перец оранжевый, 1кг
-            </h5>
+            </h3>
           </a>
           <div class="card-product__price">
             <span class="price">
@@ -668,8 +673,9 @@
         <form class="footer__search" action="#">
           <label class="footer__search-inner">
             <input class="footer__search-field" type="email" name="mail" placeholder="email@email.com" required>
+            <span class="sr-only">Подписаться на акции.Введите адрес электронной почты</span>
           </label>
-          <button class="btn btn--subscribe" type="submit">подписаться</button>
+          <button class="btn btn--subscribe" type="button">подписаться</button>
         </form>
       </div>
 
@@ -702,45 +708,45 @@
         </ul>
       </nav>
 
-      <div class="footer__socials">
-        <a class="footer__socials-hotline" href="tel:+7907288365">
+      <div class="footer__contacts">
+        <a class="footer__contacts-hotline" href="tel:+7907288365">
           Горячая линия +7 907 288 365
         </a>
-        <a class="footer__socials-address" href="#">
+        <a class="footer__contacts-address" href="#">
           Санкт-Петербург, ул. Ленина, 1
         </a>
 
-        <ul class="footer__socials-list">
-          <li class="footer__socials-item">
-            <a class="footer__socials-link" href="#" target="_blank">
-              <svg class="footer__socials-img">
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <svg class="socials__img">
                 <use xlink:href="images/sprite.svg#facebook"></use>
               </svg>
-              <span class="sr-only">Фейсбук</span>
+              <span class="sr-only">Перейти на страницу Фейсбук</span>
             </a>
           </li>
-          <li class="footer__socials-item">
-            <a class="footer__socials-link" href="#" target="_blank">
-              <svg class="footer__socials-img">
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <svg class="socials__img">
                 <use xlink:href="images/sprite.svg#youtube"></use>
               </svg>
-              <span class="sr-only">Ютуб</span>
+              <span class="sr-only">Смотреть Ютуб канал</span>
             </a>
           </li>
-          <li class="footer__socials-item">
-            <a class="footer__socials-link" href="#" target="_blank">
-              <svg class="footer__socials-img">
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <svg class="socials__img">
                 <use xlink:href="images/sprite.svg#telegram"></use>
               </svg>
-              <span class="sr-only">Телеграм</span>
+              <span class="sr-only">Перейти на страницу Телеграм</span>
             </a>
           </li>
-          <li class="footer__socials-item">
-            <a class="footer__socials-link" href="#" target="_blank">
-              <svg class="footer__socials-img">
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <svg class="socials__img">
                 <use xlink:href="images/sprite.svg#instagram"></use>
               </svg>
-              <span class="sr-only">Инстаграм</span>
+              <span class="sr-only">Перейти на страницу Инстаграм</span>
             </a>
           </li>
         </ul>
@@ -749,7 +755,6 @@
   </div>
   <div class="footer__line"></div>
   <div class="container">
-
     <div class="footer__bottom">
       <p class="footer__bottom-copyright">
         &copy;&nbsp;2021 фрешок

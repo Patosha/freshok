@@ -12,7 +12,7 @@
           </a>
         </address>
 
-        <nav class="navigation">
+        <div class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">
@@ -30,7 +30,7 @@
               </a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </div>
   </nav>
@@ -117,34 +117,35 @@
             <svg class="search__inner-svg">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
+            <span class="sr-only">Найти в магазине</span>
             <input class="search__field" type="search" name="search" placeholder="Найти в магазине ...">
           </label>
           <button class="search__btn" type="submit">Поиск</button>
         </form>
 
         <div class="user-nav">
-          <a class="user-nav__link" href="#">
+          <button class="user-nav__btn" type="menu">
             <svg class="user-nav__svg">
               <use xlink:href="images/sprite.svg#user-link"></use>
             </svg>
             <span class="sr-only">Зайти в профиль</span>
-          </a>
+          </button>
 
-          <a class="user-nav__link" href="#">
+          <button class="user-nav__btn" type="menu">
             <svg class="user-nav__svg">
               <use xlink:href="images/sprite.svg#heart"></use>
             </svg>
             <span class="user-nav__count">12</span>
             <span class="sr-only">Посмотреть избранное</span>
-          </a>
+          </button>
 
-          <a class="user-nav__link" href="#">
+          <button class="user-nav__btn" type="menu">
             <svg class="user-nav__svg">
               <use xlink:href="images/sprite.svg#cart"></use>
             </svg>
             <span class="user-nav__count">12</span>
             <span class="sr-only">Зайти в корзину</span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
