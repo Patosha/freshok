@@ -1,0 +1,61 @@
+.advantages {
+  background-color: var(--silver-100);
+  margin-top: -5px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0 29px;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 264px;
+    width: 100%;
+    padding-left: 74px;
+    margin-right: 65px;
+    word-wrap: break-word;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__item--delivery::before {
+    background-image: url("../images/icons/scooter.svg");
+  }
+
+  &__item--return::before {
+    background-image: url("../images/icons/return-box.svg");
+  }
+
+  &__item--support::before {
+    background-image: url("../images/icons/24-hours.svg");
+  }
+
+  &__title {
+    color: var(--dark-900);
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+  }
+
+  &__text {
+    max-width: 190px;
+    color: var(--dark-500);
+    font-size: 14px;
+  }
+}
