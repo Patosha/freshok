@@ -8,7 +8,7 @@
 
   &__item {
     margin-right: 30px;
-    opacity: 0.5;
+    opacity: 0.5%;
     transition: opacity 0.5s;
 
     &:last-child {
@@ -16,7 +16,7 @@
     }
 
     &:hover {
-      opacity: 1;
+      opacity: 100%;
     }
   }
 

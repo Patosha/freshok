@@ -26,7 +26,7 @@ function browsersync() {
 }
 
 function styles() {
-  return src('app/scss/style.scss')
+  return src('app/scss/**/*.scss')
     .pipe(gulpStylelint({
       failAfterError: false,
       reporters: [{

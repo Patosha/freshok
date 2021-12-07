@@ -57,6 +57,7 @@ body {
 
 .search__btn {
   background-color: var(--dark-800);
+  color: var(--white);
   border-radius: 0 6px 6px 0;
   font-weight: 600;
   font-size: 14px;
@@ -100,7 +101,7 @@ body {
   }
 
   &:hover {
-    background-color: #4d810c
+    background-color: #4d810c;
   }
 
   &:active {
