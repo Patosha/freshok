@@ -1,11 +1,6 @@
 .top-products {
   text-align: center;
-  color: var(--dark-900);
   padding-top: 72px;
-
-  &__title {
-    margin-bottom: 30px;
-  }
 
   &__list {
     display: grid;
@@ -13,14 +8,6 @@
     grid-gap: 0 28px;
     margin-bottom: 18px;
   }
-}
-
-.title {
-  font-family: Ruda, sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
 }
 
 .mix-filter {
