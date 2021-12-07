@@ -6,7 +6,7 @@ body {
 body {
   font-family: OpenSans, sans-serif;
   font-weight: 400;
-  color: var(--white);
+  color: var(--dark-900);
   line-height: 1.4;
   font-size: 14px;
   background-color: var(--white);
@@ -45,8 +45,19 @@ body {
   overflow: hidden;
 }
 
+.title {
+  font-family: Ruda, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--dark-900);
+  margin-bottom: 32px;
+}
+
 .search__btn {
   background-color: var(--dark-800);
+  color: var(--white);
   border-radius: 0 6px 6px 0;
   font-weight: 600;
   font-size: 14px;
@@ -90,7 +101,7 @@ body {
   }
 
   &:hover {
-    background-color: #4d810c
+    background-color: #4d810c;
   }
 
   &:active {
