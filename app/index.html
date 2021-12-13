@@ -298,21 +298,19 @@
       <li class="top-products__item mix category-a">
         <article class="card-product">
           <div class="card-product__wrap">
-
             <span class="badge-green">
               новинка
             </span>
             <span class="badge-green badge-green--red">
               -50%
             </span>
-
-            <button class="card-product__favorites" type="button">
-              <svg class="card-product__favorites-svg">
-                <use xlink:href="images/sprite.svg#favorite-btn"></use>
-              </svg>
-              <span class="sr-only">Добавить в избранное</span>
-            </button>
           </div>
+          <button class="card-product__favorites" type="button">
+            <svg class="card-product__favorites-svg">
+              <use xlink:href="images/sprite.svg#favorite-btn"></use>
+            </svg>
+            <span class="sr-only">Добавить в избранное</span>
+          </button>
           <a class="card-product__link" href="#">
             <img class="card-product__img" src="images/goods/pineapple.jpg" width="300" height="215" alt="Ананас">
             <svg class="card-product__link-svg">
@@ -633,9 +631,9 @@
 </div>
   <section class="stock">
   <div class="container">
-    <h4 class="title">
+    <h2 class="title">
       Акции
-    </h4>
+    </h2>
 
     <ul class="mix-filter">
       <li class="mix-filter__list">
@@ -652,6 +650,41 @@
         <button class="mix-filter__btn" type="button" data-filter=".category-b">
           Хиты
         </button>
+      </li>
+    </ul>
+
+    <ul class="stock__list">
+      <li class="stock__item">
+
+        <article class="card-product card-product--mini">
+          <div class="card-product__wrap">
+
+            <span class="badge-green">
+              новинка
+            </span>
+
+          </div>
+          <a class="card-product__link card-product__link--hidden" href="#">
+
+            <h3 class="card-product__title card-product__title--center">
+              Ананас, 1кг
+            </h3>
+
+            <img class="card-product__img card-product__img--small" src="images/goods/pineapple.jpg" width="100"
+              height="100" alt="Ананас">
+              <span class="availability">
+                В наличии
+              </span>
+            <div class="card-product__price">
+              <span class="price">
+                999 ₽
+              </span>
+              <span class="price price--current">
+                1999 ₽
+              </span>
+            </div>
+          </a>
+        </article>
       </li>
     </ul>
     <button class="btn" type="submit">Показать еще</button>
