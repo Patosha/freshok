@@ -194,15 +194,10 @@ body {
 .price {
   color: var(--dark-500);
   line-height: 1;
-  position: absolute;
-  bottom: 18px;
-  left: 21px;
 
   &--current {
     color: var(--silver-600);
     text-decoration: line-through;
-    bottom: 35px;
-    left: 21px;
   }
 }
 

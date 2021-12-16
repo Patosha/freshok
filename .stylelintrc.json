@@ -1,4 +1,0 @@
-{
-  "extends": ["stylelint-config-recommended","stylelint-config-standard", "stylelint-order", "stylelint-config-standard-scss"]
-
-}

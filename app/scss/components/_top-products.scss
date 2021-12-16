@@ -57,7 +57,8 @@
 
 .card-product {
   max-width: 300px;
-  height: 409px;
+  min-height: 409px;
+  padding-top: 56px;
   width: 100%;
   border: solid 1px rgba(17 17 17 / 20%);
   border-radius: 6px;
@@ -65,9 +66,10 @@
   letter-spacing: 0.03em;
 
   &--mini {
-    height: 124px;
+    min-height: 124px;
     border: 1px solid var(--silver-600);
     background-color: var(--white);
+    padding-top: 0;
   }
 
   &__favorites {
@@ -76,6 +78,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border: transparent;
+    outline: transparent;
     background-color: var(--white);
     position: absolute;
     top: 14px;
@@ -106,12 +109,8 @@
   }
 
   &__link {
-    position: absolute;
-    width: 298px;
-    height: 215px;
-    top: 56px;
-    left: 0;
-    background-size: contain;
+    position: relative;
+    display: block;
 
     &--hidden {
       height: 124px;
@@ -185,6 +184,7 @@
     font-size: 14px;
     padding: 18px 20px 0;
     word-wrap: break-word;
+    margin-bottom: 50px;
 
     &--center {
       text-align: center;
@@ -200,15 +200,18 @@
     font-size: 14px;
   }
 
+  &__price-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   &__cart {
     width: 32px;
     height: 32px;
     background-color: var(--green-900);
     border-radius: 3px;
     border: transparent;
-    position: absolute;
-    bottom: 18px;
-    right: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
