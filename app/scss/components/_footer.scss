@@ -42,7 +42,7 @@
     }
   }
 
-  &__menu {
+  &__content {
     columns: 190px;
     column-count: 3;
   }
@@ -64,11 +64,6 @@
   &__contacts-address {
     display: inline-block;
     margin-bottom: 18px;
-  }
-
-  &__line {
-    border-top: 1px solid var(--white);
-    opacity: 10%;
   }
 
   &__bottom {

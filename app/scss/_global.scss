@@ -52,7 +52,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--dark-900);
-  margin-bottom: 32px;
+
+  &--margin-bottom {
+    margin-bottom: 32px
+  }
 }
 
 .search__btn {
@@ -194,10 +197,34 @@ body {
 .price {
   color: var(--dark-500);
   line-height: 1;
+  align-items: flex-end;
+
+  &--big {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    margin-right: 12px;
+  }
+
+  &--small {
+    margin-right: 10px;
+    font-size: 12px;
+  }
 
   &--current {
     color: var(--silver-600);
-    text-decoration: line-through;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 6px;
+      border: 1px solid var(--silver-600);
+      transform: matrix(0.99, -0.17, -0.13, -0.99, 0, 0);
+    }
   }
 }
 
@@ -207,6 +234,8 @@ body {
   font-size: 10px;
   line-height: 1;
   color: var(--christi);
+  margin-bottom: 3px;
+  letter-spacing: 0.03em;
 
   &--red {
     color: var(--red-900);
@@ -215,6 +244,17 @@ body {
   &--silver {
     color: var(--silver-600);
   }
+}
+
+.rating {
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  padding-right: 16px;
+  background-position: right;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/star.svg);
 }
 
 .socials {
