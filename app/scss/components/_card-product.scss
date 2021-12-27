@@ -1,7 +1,7 @@
 .card-product {
   max-width: 300px;
   min-height: 409px;
-  padding-top: 56px;
+  padding-top: 54px;
   width: 100%;
   border: solid 1px rgba(17 17 17 / 20%);
   border-radius: 6px;
@@ -17,8 +17,8 @@
     outline: transparent;
     background-color: var(--white);
     position: absolute;
-    top: 14px;
-    right: 4px;
+    top: 8px;
+    right: 5px;
     border-radius: 3px;
     transition: background-color 0.5s, box-shadow 0.5s;
 
@@ -86,7 +86,7 @@
 
   &__img {
     object-fit: cover;
-    padding: 3px;
+    padding: 1px;
   }
 
   &__link-svg {
@@ -106,11 +106,14 @@
     opacity: 100%;
   }
 
+  &__bottom {
+    padding: 18px;
+  }
+
   &__title {
     text-align: start;
     font-size: 14px;
-    padding: 18px 20px 0;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
     font-weight: 600;
     display: -webkit-box;
     overflow: hidden;
@@ -122,7 +125,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 0 18px 0 21px;
+    // padding: 0 18px 0 21px;
     font-size: 14px;
   }
 

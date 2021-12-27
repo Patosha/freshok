@@ -6,6 +6,11 @@
   max-width: 300px;
   width: 100%;
   position: relative;
+  transition: border 0.5s;
+
+  &:hover {
+    border: 1px solid var(--christi);
+  }
 
 
   &__link {
