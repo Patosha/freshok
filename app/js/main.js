@@ -5,6 +5,7 @@ $(function () {
   });
 
   var mixer = mixitup('.top-products__list');
+  var mixer = mixitup('.stock__list');
 
 
   // $(".rating").rateYo({

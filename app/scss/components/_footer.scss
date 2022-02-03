@@ -47,6 +47,13 @@
     column-count: 3;
   }
 
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 24px 0;
+  }
+
   &__item {
     margin-bottom: 18px;
   }
@@ -67,10 +74,7 @@
   }
 
   &__bottom {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding: 24px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   &__bottom-copyright {
