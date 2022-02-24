@@ -263,7 +263,7 @@
     </ul>
   </div>
 </section>
-  <section class="top-products">
+  <section class="top-products" data-ref="top-products__list">
   <div class="container">
     <h2 class="title title--margin-bottom">
       Топовые товары
@@ -299,21 +299,27 @@
 
     <ul class="top-products__list">
       <li class="top-products__item mix category-a">
-        <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green">
-              новинка
-            </span>
-            <span class="badge-green badge-green--red">
-              -50%
-            </span>
-          </div>
 
-          <button class="card-product__favorites" type="button">
-            <svg class="card-product__favorites-svg" aria-label="Добавить в избранное">
-              <use xlink:href="images/sprite.svg#favorite-btn"></use>
-            </svg>
-          </button>
+        <article class="card-product">
+
+          <div class="card-product__top">
+
+            <div class="card-product__badges">
+              <span class="badge badge--green">
+                новинка
+              </span>
+              <span class="badge badge--red">
+                -50%
+              </span>
+            </div>
+
+            <button class="card-product__favorites" type="button">
+              <svg class="card-product__favorites-svg" aria-label="Добавить в избранное">
+                <use xlink:href="images/sprite.svg#favorite-btn"></use>
+              </svg>
+            </button>
+
+          </div>
 
           <a class="card-product__link" href="#">
             <img class="card-product__img" src="images/goods/pineapple.jpg" width="300" height="215" alt="Ананас">
@@ -321,7 +327,9 @@
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
           </a>
+
           <div class="card-product__bottom">
+
             <h3 class="card-product__title">
               <a class="card-product__title-link" href="#">
                 Ананас, 1кг
@@ -343,8 +351,8 @@
                   <use xlink:href="images/sprite.svg#cart"></use>
                 </svg>
               </button>
-
             </div>
+
           </div>
         </article>
       </li>
@@ -704,7 +712,7 @@
     </ul>
   </div>
 </section>
-  <section class="stock">
+  <section class="stock" data-ref="stock__list">
   <div class="container">
     <h2 class="title title--margin-bottom">
       Акции
