@@ -1,4 +1,4 @@
-<section class="top-products">
+<section class="top-products" data-ref="top-products__list">
   <div class="container">
     <h2 class="title title--margin-bottom">
       Топовые товары
@@ -11,44 +11,49 @@
         </button>
       </li>
       <li class="mix-filter__list">
-        <button class="mix-filter__btn" type="button" data-filter=".category-a">
+        <button class="mix-filter__btn" type="button" data-filter=".fruit">
           Фрукты
         </button>
       </li>
       <li class="mix-filter__list">
-        <button class="mix-filter__btn" type="button" data-filter=".category-b">
+        <button class="mix-filter__btn" type="button" data-filter=".vegetables">
           Овощи
         </button>
       </li>
       <li class="mix-filter__list">
-        <button class="mix-filter__btn" type="button" data-filter=".category-c">
+        <button class="mix-filter__btn" type="button" data-filter=".drinks">
           Напитки
         </button>
       </li>
       <li class="mix-filter__list">
-        <button class="mix-filter__btn" type="button" data-filter=".category-d">
+        <button class="mix-filter__btn" type="button" data-filter=".grocery">
           Бакалея
         </button>
       </li>
     </ul>
 
     <ul class="top-products__list">
-      <li class="top-products__item mix category-a">
+      <li class="top-products__item mix fruit">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green">
-              новинка
-            </span>
-            <span class="badge-green badge-green--red">
-              -50%
-            </span>
-          </div>
 
-          <button class="card-product__favorites" type="button">
-            <svg class="card-product__favorites-svg" aria-label="Добавить в избранное">
-              <use xlink:href="images/sprite.svg#favorite-btn"></use>
-            </svg>
-          </button>
+          <div class="card-product__top">
+
+            <div class="card-product__badges">
+              <span class="badge badge--green">
+                новинка
+              </span>
+              <span class="badge badge--red">
+                -50%
+              </span>
+            </div>
+
+            <button class="card-product__favorites" type="button">
+              <svg class="card-product__favorites-svg" aria-label="Добавить в избранное">
+                <use xlink:href="images/sprite.svg#favorite-btn"></use>
+              </svg>
+            </button>
+
+          </div>
 
           <a class="card-product__link" href="#">
             <img class="card-product__img" src="images/goods/pineapple.jpg" width="300" height="215" alt="Ананас">
@@ -56,7 +61,9 @@
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
           </a>
+
           <div class="card-product__bottom">
+
             <h3 class="card-product__title">
               <a class="card-product__title-link" href="#">
                 Ананас, 1кг
@@ -78,15 +85,19 @@
                   <use xlink:href="images/sprite.svg#cart"></use>
                 </svg>
               </button>
-
             </div>
+
           </div>
         </article>
       </li>
 
-      <li class="top-products__item mix category-a">
+      <li class="top-products__item mix fruit">
         <article class="card-product">
-          <div class="card-product__wrap">
+          <div class="card-product__top">
+
+            <div class="card-product__badges">
+
+            </div>
 
             <button class="card-product__favorites" type="button">
               <svg class="card-product__favorites-svg" aria-label="Добавить в избранное">
@@ -125,10 +136,10 @@
           </div>
         </article>
       </li>
-      <li class="top-products__item mix category-a">
+      <li class="top-products__item mix fruit">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green badge-green--orange">
+          <div class="card-product__top">
+            <span class="badge badge--orange">
               хит
             </span>
 
@@ -171,9 +182,13 @@
           </div>
         </article>
       </li>
-      <li class="top-products__item mix category-d">
+      <li class="top-products__item mix grocery">
         <article class="card-product">
-          <div class="card-product__wrap">
+          <div class="card-product__top">
+
+            <div class="card-product__badges">
+
+            </div>
 
             <button class="card-product__favorites" type="button">
               <svg class="card-product__favorites-svg" aria-label="Добавить в избранное">
@@ -213,10 +228,10 @@
         </article>
       </li>
 
-      <li class="top-products__item mix category-b">
+      <li class="top-products__item mix vegetables">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green badge-green--orange">
+          <div class="card-product__top">
+            <span class="badge badge--orange">
               хит
             </span>
 
@@ -257,10 +272,10 @@
           </div>
         </article>
       </li>
-      <li class="top-products__item mix category-c">
+      <li class="top-products__item mix drinks">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green badge-green--discount-top">
+          <div class="card-product__top">
+            <span class="badge badge--red">
               -30%
             </span>
 
@@ -281,7 +296,7 @@
           <div class="card-product__bottom">
             <h3 class="card-product__title">
               <a class="card-product__title-link" href="#">
-                Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн
+                Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольный
               </a>
             </h3>
 
@@ -304,10 +319,10 @@
           </div>
         </article>
       </li>
-      <li class="top-products__item mix category-c">
+      <li class="top-products__item mix drinks">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green">
+          <div class="card-product__top">
+            <span class="badge badge--green">
               новинка
             </span>
 
@@ -348,10 +363,10 @@
           </div>
         </article>
       </li>
-      <li class="top-products__item mix category-b">
+      <li class="top-products__item mix vegetables">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green">
+          <div class="card-product__top">
+            <span class="badge badge--green">
               новинка
             </span>
 

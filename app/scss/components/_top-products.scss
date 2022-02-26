@@ -41,7 +41,7 @@
   }
 }
 
-.mixitup-control-active::after {
+.mix-filter__btn--active::after {
   content: "";
   width: 100%;
   height: 3px;
@@ -51,6 +51,6 @@
   transition: background-color 0.5s;
 }
 
-.mixitup-control-active:focus::after {
+.mix-filter__btn--active:focus::after {
   background-color: var(--green-200);
 }

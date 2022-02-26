@@ -141,20 +141,20 @@
         </form>
 
         <div class="user-nav">
-          <button class="user-nav__btn" type="menu">
+          <button class="user-nav__btn" type="button">
             <svg class="user-nav__svg" aria-label="Зайти в профиль">
               <use xlink:href="images/sprite.svg#user-link"></use>
             </svg>
           </button>
 
-          <button class="user-nav__btn" type="menu">
+          <button class="user-nav__btn" type="button">
             <svg class="user-nav__svg" aria-label="Посмотреть избранное">
               <use xlink:href="images/sprite.svg#heart"></use>
             </svg>
             <span class="user-nav__count">12</span>
           </button>
 
-          <button class="user-nav__btn" type="menu">
+          <button class="user-nav__btn" type="button">
             <svg class="user-nav__svg" aria-label="Зайти в корзину">
               <use xlink:href="images/sprite.svg#cart"></use>
             </svg>
@@ -263,7 +263,7 @@
     </ul>
   </div>
 </section>
-  <section class="top-products">
+  <section class="top-products" data-ref="top-products__list">
   <div class="container">
     <h2 class="title title--margin-bottom">
       Топовые товары
@@ -276,44 +276,49 @@
         </button>
       </li>
       <li class="mix-filter__list">
-        <button class="mix-filter__btn" type="button" data-filter=".category-a">
+        <button class="mix-filter__btn" type="button" data-filter=".fruit">
           Фрукты
         </button>
       </li>
       <li class="mix-filter__list">
-        <button class="mix-filter__btn" type="button" data-filter=".category-b">
+        <button class="mix-filter__btn" type="button" data-filter=".vegetables">
           Овощи
         </button>
       </li>
       <li class="mix-filter__list">
-        <button class="mix-filter__btn" type="button" data-filter=".category-c">
+        <button class="mix-filter__btn" type="button" data-filter=".drinks">
           Напитки
         </button>
       </li>
       <li class="mix-filter__list">
-        <button class="mix-filter__btn" type="button" data-filter=".category-d">
+        <button class="mix-filter__btn" type="button" data-filter=".grocery">
           Бакалея
         </button>
       </li>
     </ul>
 
     <ul class="top-products__list">
-      <li class="top-products__item mix category-a">
+      <li class="top-products__item mix fruit">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green">
-              новинка
-            </span>
-            <span class="badge-green badge-green--red">
-              -50%
-            </span>
-          </div>
 
-          <button class="card-product__favorites" type="button">
-            <svg class="card-product__favorites-svg" aria-label="Добавить в избранное">
-              <use xlink:href="images/sprite.svg#favorite-btn"></use>
-            </svg>
-          </button>
+          <div class="card-product__top">
+
+            <div class="card-product__badges">
+              <span class="badge badge--green">
+                новинка
+              </span>
+              <span class="badge badge--red">
+                -50%
+              </span>
+            </div>
+
+            <button class="card-product__favorites" type="button">
+              <svg class="card-product__favorites-svg" aria-label="Добавить в избранное">
+                <use xlink:href="images/sprite.svg#favorite-btn"></use>
+              </svg>
+            </button>
+
+          </div>
 
           <a class="card-product__link" href="#">
             <img class="card-product__img" src="images/goods/pineapple.jpg" width="300" height="215" alt="Ананас">
@@ -321,7 +326,9 @@
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
           </a>
+
           <div class="card-product__bottom">
+
             <h3 class="card-product__title">
               <a class="card-product__title-link" href="#">
                 Ананас, 1кг
@@ -343,15 +350,19 @@
                   <use xlink:href="images/sprite.svg#cart"></use>
                 </svg>
               </button>
-
             </div>
+
           </div>
         </article>
       </li>
 
-      <li class="top-products__item mix category-a">
+      <li class="top-products__item mix fruit">
         <article class="card-product">
-          <div class="card-product__wrap">
+          <div class="card-product__top">
+
+            <div class="card-product__badges">
+
+            </div>
 
             <button class="card-product__favorites" type="button">
               <svg class="card-product__favorites-svg" aria-label="Добавить в избранное">
@@ -390,10 +401,10 @@
           </div>
         </article>
       </li>
-      <li class="top-products__item mix category-a">
+      <li class="top-products__item mix fruit">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green badge-green--orange">
+          <div class="card-product__top">
+            <span class="badge badge--orange">
               хит
             </span>
 
@@ -436,9 +447,13 @@
           </div>
         </article>
       </li>
-      <li class="top-products__item mix category-d">
+      <li class="top-products__item mix grocery">
         <article class="card-product">
-          <div class="card-product__wrap">
+          <div class="card-product__top">
+
+            <div class="card-product__badges">
+
+            </div>
 
             <button class="card-product__favorites" type="button">
               <svg class="card-product__favorites-svg" aria-label="Добавить в избранное">
@@ -478,10 +493,10 @@
         </article>
       </li>
 
-      <li class="top-products__item mix category-b">
+      <li class="top-products__item mix vegetables">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green badge-green--orange">
+          <div class="card-product__top">
+            <span class="badge badge--orange">
               хит
             </span>
 
@@ -522,10 +537,10 @@
           </div>
         </article>
       </li>
-      <li class="top-products__item mix category-c">
+      <li class="top-products__item mix drinks">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green badge-green--discount-top">
+          <div class="card-product__top">
+            <span class="badge badge--red">
               -30%
             </span>
 
@@ -546,7 +561,7 @@
           <div class="card-product__bottom">
             <h3 class="card-product__title">
               <a class="card-product__title-link" href="#">
-                Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн
+                Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольный
               </a>
             </h3>
 
@@ -569,10 +584,10 @@
           </div>
         </article>
       </li>
-      <li class="top-products__item mix category-c">
+      <li class="top-products__item mix drinks">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green">
+          <div class="card-product__top">
+            <span class="badge badge--green">
               новинка
             </span>
 
@@ -613,10 +628,10 @@
           </div>
         </article>
       </li>
-      <li class="top-products__item mix category-b">
+      <li class="top-products__item mix vegetables">
         <article class="card-product">
-          <div class="card-product__wrap">
-            <span class="badge-green">
+          <div class="card-product__top">
+            <span class="badge badge--green">
               новинка
             </span>
 
@@ -704,41 +719,42 @@
     </ul>
   </div>
 </section>
-  <section class="stock">
+  <section class="stock" data-ref="stock__list">
   <div class="container">
     <h2 class="title title--margin-bottom">
       Акции
     </h2>
 
     <ul class="mix-filter">
-      <li class="mix-filter__list">
+      <li class="stock__item-btn mix-filter__list">
         <button class="mix-filter__btn" type="button" data-filter="all">
           Все товары
         </button>
       </li>
-      <li class="mix-filter__list">
-        <button class="mix-filter__btn" type="button" data-filter=".category-a">
+      <li class="stock__item-btn mix-filter__list">
+        <button class="mix-filter__btn" type="button" data-filter=".novelties">
           Новинки
         </button>
       </li>
-      <li class="mix-filter__list">
-        <button class="mix-filter__btn" type="button" data-filter=".category-b">
+      <li class="stock__item-btn mix-filter__list">
+        <button class="mix-filter__btn" type="button" data-filter=".hits">
           Хиты
         </button>
       </li>
     </ul>
 
     <ul class="stock__list">
-      <li class="stock__item">
+      <li class="stock__item mix novelties">
 
         <article class="stock-card">
-          <div class="stock-card__wrap card-product__wrap">
+          <div class="stock-card__wrap">
 
-            <span class="badge-green">
+            <span class="stock-card__badge badge badge--green">
               новинка
             </span>
 
           </div>
+
           <a class="stock-card__link" href="#">
 
             <img class="stock-card__img" src="images/goods/pineapple.jpg" width="100" height="100" alt="Ананас">
@@ -747,6 +763,185 @@
 
               <h3 class="stock-card__title">
                 Ананас, 1кг
+              </h3>
+
+              <span class="availability">
+                В наличии
+              </span>
+
+              <div class="stock-card__bottom">
+
+                <div class="stock-card__price">
+
+                  <div class="price price--big">
+                    999₽
+                  </div>
+
+                  <div class="price price--current price--small">
+                    1999 ₽
+                  </div>
+
+                </div>
+
+                <div class="rating">
+                  4.5
+                </div>
+
+              </div>
+
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="stock__item mix novelties">
+
+        <article class="stock-card">
+          <div class="stock-card__wrap">
+
+            <span class="stock-card__badge badge badge--green">
+              новинка
+            </span>
+
+          </div>
+
+          <a class="stock-card__link" href="#">
+
+            <img class="stock-card__img" src="images/goods/coffee.jpg" width="100" height="100"
+              alt="Кофе с коноплей органический Caffé Salomoni 250г">
+
+            <div class="stock-card__content">
+
+              <h3 class="stock-card__title">
+                Кофе с&nbsp;коноплей органический Caff&eacute; Salomoni 250г
+              </h3>
+
+              <span class="availability availability--red">
+                заканчивается
+              </span>
+
+              <div class="stock-card__bottom">
+                <div class="stock-card__price">
+                  <span class="price price--big">
+                    777₽
+                  </span>
+                  <span class="price price--current price--small">
+                    877 ₽
+                  </span>
+                </div>
+                <div class="rating">
+                  4.9
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="stock__item mix novelties">
+
+        <article class="stock-card">
+          <div class="stock-card__wrap">
+
+            <span class="stock-card__badge badge badge--green">
+              новинка
+            </span>
+
+          </div>
+
+          <a class="stock-card__link" href="#">
+
+            <img class="stock-card__img" src="images/stock/strawberry.jpg" width="100" height="100" alt="Клубника">
+
+            <div class="stock-card__content">
+
+              <h3 class="stock-card__title">
+                Клубника, 1 кг
+              </h3>
+
+              <span class="availability availability--silver">
+                нет в наличии
+              </span>
+
+              <div class="stock-card__bottom">
+                <div class="stock-card__price">
+                  <span class="price price--big">
+                    440₽
+                  </span>
+                  <span class="price price--current price--small">
+                    600 ₽
+                  </span>
+                </div>
+                <div class="rating">
+                  5.0
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="stock__item mix novelties">
+
+        <article class="stock-card">
+          <div class="stock-card__wrap">
+
+            <span class="stock-card__badge badge badge--green">
+              новинка
+            </span>
+
+          </div>
+
+          <a class="stock-card__link" href="#">
+
+            <img class="stock-card__img" src="images/stock/mango.jpg" width="100" height="100" alt="Манго">
+
+            <div class="stock-card__content">
+
+              <h3 class="stock-card__title">
+                Манго, 1 шт
+              </h3>
+
+              <span class="availability">
+                В наличии
+              </span>
+
+              <div class="stock-card__bottom">
+                <div class="stock-card__price">
+                  <span class="price price--big">
+                    660₽
+                  </span>
+                  <span class="price price--current price--small">
+                    960 ₽
+                  </span>
+                </div>
+                <div class="rating">
+                  5.0
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="stock__item mix novelties">
+
+        <article class="stock-card">
+          <div class="stock-card__wrap">
+
+            <span class="stock-card__badge badge badge--green">
+              новинка
+            </span>
+
+          </div>
+
+          <a class="stock-card__link" href="#">
+
+            <img class="stock-card__img" src="images/stock/salmon.jpg" width="100" height="100" alt="Лосось">
+
+            <div class="stock-card__content">
+
+              <h3 class="stock-card__title">
+                Лосось, 1 кг
               </h3>
 
               <span class="availability">
@@ -764,6 +959,136 @@
                 </div>
                 <div class="rating">
                   4.5
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="stock__item mix hits">
+
+        <article class="stock-card">
+          <div class="stock-card__wrap">
+
+            <span class="stock-card__badge badge badge--orange">
+              хит
+            </span>
+
+          </div>
+
+          <a class="stock-card__link" href="#">
+
+            <img class="stock-card__img" src="images/stock/veg-juice.jpg" width="100" height="100"
+              alt="Сок Granini овощной 100%, 0.5л">
+
+            <div class="stock-card__content">
+
+              <h3 class="stock-card__title">
+                Сок Granini овощной 100%, 0.5л
+              </h3>
+
+              <span class="availability availability--red">
+                заканчивается
+              </span>
+
+              <div class="stock-card__bottom">
+                <div class="stock-card__price">
+                  <span class="price price--big">
+                    180₽
+                  </span>
+                  <span class="price price--current price--small">
+                    230 ₽
+                  </span>
+                </div>
+                <div class="rating">
+                  4.9
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="stock__item mix hits">
+
+        <article class="stock-card">
+          <div class="stock-card__wrap">
+
+            <span class="stock-card__badge badge badge--orange">
+              хит
+            </span>
+
+          </div>
+
+          <a class="stock-card__link" href="#">
+
+            <img class="stock-card__img" src="images/stock/basket.jpg" width="100" height="100" alt="Фруктовая корзина">
+
+            <div class="stock-card__content">
+
+              <h3 class="stock-card__title">
+                Фруктовая корзина, 1&nbsp;шт
+              </h3>
+
+              <span class="availability">
+                В наличии
+              </span>
+
+              <div class="stock-card__bottom">
+                <div class="stock-card__price">
+                  <span class="price price--big">
+                    3990₽
+                  </span>
+                  <span class="price price--current price--small">
+                    5990 ₽
+                  </span>
+                </div>
+                <div class="rating">
+                  4.8
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="stock__item mix hits">
+
+        <article class="stock-card">
+          <div class="stock-card__wrap">
+
+            <span class="stock-card__badge badge badge--orange">
+              хит
+            </span>
+
+          </div>
+
+          <a class="stock-card__link" href="#">
+
+            <img class="stock-card__img" src="images/stock/pork.jpg" width="100" height="100" alt="Свинина мякоть">
+
+            <div class="stock-card__content">
+
+              <h3 class="stock-card__title">
+                Свинина мякоть, 1 кг
+              </h3>
+
+              <span class="availability">
+                В наличии
+              </span>
+
+              <div class="stock-card__bottom">
+                <div class="stock-card__price">
+                  <span class="price price--big">
+                    499₽
+                  </span>
+                  <span class="price price--current price--small">
+                    599₽
+                  </span>
+                </div>
+                <div class="rating">
+                  4.6
                 </div>
               </div>
             </div>
@@ -839,10 +1164,8 @@
               </span>
             </time>
             <h3 class="news-card__text">
-              <p>
-                Событие этого лета: распродажа сезонных фруктов в онлайн-маркете ФрешОК. Торопись, пока всё не
-                разобрали!
-              </p>
+              Событие этого лета: распродажа сезонных фруктов в онлайн-маркете ФрешОК. Торопись, пока всё не
+              разобрали!
             </h3>
           </a>
         </article>
@@ -854,13 +1177,11 @@
             <time class="news-card__date" datetime="2021-05-07T18:19:18+03:00">
               Май
               <span class=" news-card__inner">
-              07
+                07
               </span>
             </time>
             <h3 class="news-card__text">
-              <p>
-                Шикарнейший выбор манго в нашем онлайн-маркете
-              </p>
+              Шикарнейший выбор манго в нашем онлайн-маркете
             </h3>
           </a>
         </article>
@@ -872,13 +1193,11 @@
             <time class="news-card__date" datetime="2021-02-20T18:15:18+03:00">
               Февраль
               <span class=" news-card__inner">
-              20
+                20
               </span>
             </time>
             <h3 class="news-card__text">
-              <p>
-                Всё, что вы хотели знать о папайя
-              </p>
+              Всё, что вы хотели знать о папайя
             </h3>
           </a>
         </article>

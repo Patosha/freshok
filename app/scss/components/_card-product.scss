@@ -1,24 +1,34 @@
 .card-product {
   max-width: 300px;
   min-height: 409px;
-  padding-top: 54px;
   width: 100%;
   border: solid 1px rgba(17 17 17 / 20%);
   border-radius: 6px;
-  position: relative;
   letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    padding: 10px 12px 7px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__badges {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__favorites {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 39px;
     background-repeat: no-repeat;
     background-position: center;
     border: transparent;
     outline: transparent;
+    padding: 0;
     background-color: var(--white);
-    position: absolute;
-    top: 8px;
-    right: 5px;
     border-radius: 3px;
     transition: background-color 0.5s, box-shadow 0.5s;
 
@@ -30,8 +40,8 @@
 
   &__favorites-svg {
     display: block;
-    width: 32px;
-    height: 29px;
+    width: 100%;
+    height: 100%;
     fill: var(--silver-600);
     transition: fill 0.5s;
   }
@@ -108,24 +118,26 @@
 
   &__bottom {
     padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   &__title {
     text-align: start;
     font-size: 14px;
-    // margin-bottom: 50px;
     font-weight: 600;
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    margin-bottom: auto;
   }
 
   &__price {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    // padding: 0 18px 0 21px;
+    align-items: flex-end;
     font-size: 14px;
   }
 
