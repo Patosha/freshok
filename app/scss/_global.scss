@@ -191,18 +191,21 @@ body {
 .price {
   color: var(--dark-500);
   line-height: 1;
-  align-items: flex-end;
+
+  &:not(:last-child) {
+    // margin-right: 12px;
+  }
 
   &--big {
     font-weight: 600;
     font-size: 20px;
     line-height: 1;
     letter-spacing: 0.03em;
-    margin-right: 12px;
+    // margin-right: 12px;
   }
 
   &--small {
-    margin-right: 10px;
+    // margin-right: 25px;
     font-size: 12px;
   }
 
@@ -228,7 +231,7 @@ body {
   font-size: 10px;
   line-height: 1;
   color: var(--christi);
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   letter-spacing: 0.03em;
 
   &--red {
@@ -244,7 +247,7 @@ body {
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.03em;
-  padding-right: 16px;
+  padding-right: 20px;
   background-position: right;
   background-size: 16px 16px;
   background-repeat: no-repeat;

@@ -6,7 +6,8 @@ $(function () {
 
   var containerEl1 = document.querySelector('[data-ref="top-products__list"]');
   var containerEl2 = document.querySelector('[data-ref="stock__list"]');
-
+  
+  
   var mixerTopProducts = mixitup(containerEl1, {
     controls: {
       scope: 'local'
